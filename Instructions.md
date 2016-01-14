@@ -151,10 +151,10 @@ end
 **6. Finally, run the app**
  
 Run the ruby app and enjoy the show. You should start seeing requests from the VHM coming in over an encrypted SSL session.
- 
-== Sinatra (v1.4.6) has taken the stage on 4000 for production with backup from Thin
-Thin web server (v1.6.4 codename Gob Bluth)
-Maximum connections set to 1024
-Listening on 127.0.0.1:4000, CTRL+C to stop
-127.0.0.1 - - [30/Dec/2015:12:38:56 +0000] "POST / HTTP/1.0" 204 - 0.0017
+      
+== Sinatra (v1.4.6) has taken the stage on 4000 for production with backup from Thin      
+Thin web server (v1.6.4 codename Gob Bluth)      
+Maximum connections set to 1024      
+Listening on 127.0.0.1:4000, CTRL+C to stop    
+127.0.0.1 - - [30/Dec/2015:12:38:56 +0000] "POST / HTTP/1.0" 204 - 0.0017    
 127.0.0.1 - - [30/Dec/2015:12:38:56 +0000] "POST / HTTP/1.0" 204 - 0.0025
