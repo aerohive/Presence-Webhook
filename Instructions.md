@@ -133,7 +133,7 @@ end
   
 #Handle HTTP GET request. Used for SSL testing.  
 get '/' do  
-  "Hello, SSL."  
+  "Hello. You are using SSL!"  
 end  
   
   
