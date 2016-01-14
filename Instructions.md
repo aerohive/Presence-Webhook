@@ -8,13 +8,13 @@ This document describes how to write an application that will receive streaming 
 4. Configure HMNG API Data Management settings to point to the URL of your web server
  
 The message flow of the app is as follows:
- 
-HMNG ------ HTTPS -------> nginx  ----Thin----> Ruby App #1
-                                                 *|
-                                                 * ----Thin----> Ruby App #2
-                                                 *|
-                                                 * ----Thin----> Ruby App #3
- 
+ ```
+HMNG ------ HTTPS -------> nginx  ----Thin----> Ruby App #1    
+                                                  |   
+                                                   ----Thin----> Ruby App #2   
+                                                  |    
+                                                   ----Thin----> Ruby App #3    
+ ```
 The API Data Management configuration in HiveManager NG points to a https endpoint on the web server.
 
 **1. Install Ruby**
