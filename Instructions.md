@@ -1,6 +1,6 @@
 This document describes how to write an application that will receive streaming presence API calls over a secure SSL session. Avoid using plain HTTP endpoints because unencrypted data (client MAC addresses and positions) should not be transmitted over the internet.
  
-Some prerequisites:
+**Some prerequisites:**
  
 1. Obtain a valid publicly signed SSL certificate for the web server. This is important. HMMG will not post to untrusted SSL endpoints.
 2. Make sure the certificate contains the whole CA certificate chain. This usually means concatenating all the public certificates into a single bundle. A good guide is available here: Certificate Installation: NGINX - Powered by Kayako Help Desk Software
