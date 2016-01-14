@@ -48,6 +48,7 @@ Edit the nginx configuration file. Add SSL support and configure the Ruby app ba
  
 sudo vi /etc/nginx/sites-available/default  
  
+```
 # Ruby app backend
 upstream backend {
   server 127.0.0.1:4000;
@@ -78,7 +79,7 @@ server {
                 try_files $uri @backend;
         }
 }
- 
+``` 
  
 To test nginx configuration, run
 nginx -t  
@@ -89,7 +90,8 @@ sudo service nginx restart
 **5. Write the Ruby application**
  
 The source code for the Ruby application that will process the streaming API HTTP POST requests and write to a file is given below. Make sure the port settings between the application and the nginx upstream configuration are correct. Nginx should proxy the request to the Ruby application.
- 
+
+``` 
 require 'sinatra'  
 require 'thin'  
   
@@ -145,7 +147,7 @@ File.open("events.txt", "a") do |f|
     f.puts(request.body.read)  
 end  
 end  
- 
+```
 **6. Finally, run the app**
  
 Run the ruby app and enjoy the show. You should start seeing requests from the VHM coming in over an encrypted SSL session.
