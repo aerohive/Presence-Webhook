@@ -7,9 +7,6 @@ This document describes how to write an application that will receive streaming 
 3. Make sure your web server is reachable on the internet (public IP, DNS...)
 4. Configure HMNG API Data Management settings to point to the URL of your web server
  
-Alternatively, if you are not into programming, domains and certificates, this setup is available under https://ahtraining.in:3000.
- 
- 
 The message flow of the app is as follows:
  
 HMNG ------ HTTPS -------> nginx  ----Thin----> Ruby App #1
