@@ -91,7 +91,7 @@ sudo service nginx restart
  
 The source code for the Ruby application that will process the streaming API HTTP POST requests and write to a file is given below. Make sure the port settings between the application and the nginx upstream configuration are correct. Nginx should proxy the request to the Ruby application.
 
-``` 
+```Ruby 
 require 'sinatra'  
 require 'thin'  
   
