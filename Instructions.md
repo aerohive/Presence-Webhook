@@ -139,7 +139,7 @@ end
   
 #Handle HTTP POST requests  
 post '/' do  
-  status 204 #successful request with no body content  
+  status 200 #successful request with no body content  
   request.body.rewind  
   request_payload = JSON.parse(request.body.read)  
 #append the payload to a file  
